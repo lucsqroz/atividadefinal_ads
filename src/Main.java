@@ -1,7 +1,10 @@
-public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        System.out.println("Olá, mundo!");
-        System.out.println("Hola mundo!");
+public class Main {
+    public static void main(String[] args) {
+        Gato meuGato = new Gato("Bolinha", 2, 4.5);
+        Comida comidaParaMeuGato = new Comida(meuGato);
+
+        comidaParaMeuGato.servirRacao();
+        comidaParaMeuGato.verificarGato();
+        meuGato.miar();
     }
 }
